@@ -66,6 +66,7 @@ def testar_cores_hsv(img,escala):
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
     cv2.destroyAllWindows()
+    print('h_min:',h_min,"h_max:",h_max,"s_min:",s_min,"s_max:",s_max,"v_min:",v_min,"v_max:",v_max)
 def testar_cores_rgb(img,escala):
     cv2.namedWindow("TrackBars")
     cv2.resizeWindow("TrackBars",640,240)
@@ -92,6 +93,7 @@ def testar_cores_rgb(img,escala):
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
     cv2.destroyAllWindows()
+    print('r_min:',r_min,"r_max:",r_max,"g_min:",g_min,"g_max:",g_max,"b_min:",b_min,"b_max:",b_max)
 #Exemplo de uso
 #import cv2
 #import numpy as np
